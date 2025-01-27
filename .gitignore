@@ -1,0 +1,49 @@
+# =====================
+# Monorepo Root Ignores
+# =====================
+# Dependency directories (global and nested)
+**/node_modules/
+node_modules/
+
+# Lockfiles (keep these if you want consistency across contributors)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Environment files (all environments)
+**/.env
+**/.env.local
+**/.env.*.local
+
+# OS-specific files
+**/.DS_Store
+**/Thumbs.db
+
+# Editor/IDE files
+**/.vscode/
+**/.idea/
+
+# ======================
+# Frontend (Vite/React)
+# ======================
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/coverage/
+frontend/.cache/
+
+# ====================
+# Backend (Node.js)
+# ====================
+backend/logs/
+backend/coverage/
+backend/.nyc_output/
+backend/*.log
+backend/db/  # If using local databases
+
+# ================
+# Testing/Cache
+# ================
+**/jest-cache/
+**/.jest/
+**/.pnp
